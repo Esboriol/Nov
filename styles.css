@@ -121,6 +121,31 @@ footer {
     font-size: 0.9rem;
 }
 
+.flags {
+    display: flex;
+    gap: 12px;              /* Espaçamento entre as bandeiras */
+    margin-top: 10px;
+    justify-content: center; /* Alinha à direita do header */
+    align-items: center;
+}
+
+/* Estilo das imagens das bandeiras */
+.flags img {
+    width: 36px;            /* Tamanho maior para melhor visualização */
+    height: auto;           /* Mantém proporção */
+    cursor: pointer;
+    border-radius: 4px;     /* Bordas levemente arredondadas */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* Sombra suave */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Efeito ao passar o mouse */
+.flags img:hover {
+    transform: scale(1.15); /* Aumenta levemente */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Sombra mais forte */
+}
+
+
 /* Responsividade */
 @media (max-width: 768px) {
     nav ul {
